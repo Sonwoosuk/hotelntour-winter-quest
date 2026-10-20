@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>호텔엔투어 미리 준비하는 겨울방학</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Do+Hyeon&family=Nanum+Gothic:wght@700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<div class="sea" id="sea" aria-hidden="true"></div>
+<div class="clim green" aria-hidden="true"></div>
+<div class="clim snow" aria-hidden="true"></div>
+<div class="topbar">
+  <div class="brand">HOTEL&amp;TOUR · WINTER QUEST</div>
+  <div class="tool">
+    <button class="tbtn px" id="sfx" type="button">SOUND ON</button>
+    <button class="tbtn px" id="restart" type="button">RESTART</button>
+  </div>
+</div>
+
+<main class="board" id="board">
+  <div class="wave l" aria-hidden="true"></div><div class="wave r" aria-hidden="true"></div>
+  <div class="road" aria-hidden="true"><i class="road-dirt"></i><i class="road-snow"></i></div>
+  <div class="walkers" id="walkers" aria-hidden="true">
+    <div class="walker A" data-l="민섭" id="wA"></div>
+    <div class="walker B" data-l="준희" id="wB"></div>
+  </div>
+
+  <header class="hero">
+    <div class="plate px">
+      <div class="kicker vs"><span class="na">민섭 고객님</span> · <span class="nb">준희 고객님</span></div>
+      <p class="pre">호텔엔투어로</p>
+      <h1>미리 준비하는 <span class="a">겨울</span><span class="b">방학</span></h1>
+      <p>한 발 빠른 준비로 만나는 특가 &amp; 특별한 기간한정 상품<br>눈길을 따라 내려가며 두 분의 여행 취향을 골라 주세요</p>
+      <div class="trip-info" id="tripInfo"></div>
+    </div>
+  </header>
+
+  <section class="stage" id="st-draw">
+    <div class="cols"><div class="pcol A"></div><div class="mid" data-mark></div><div class="pcol B"></div></div>
+    <div class="next"><button class="go px" id="go-draw" type="button">SCROLL ▼ 출발!</button></div>
+  </section>
+
+  <div id="stages"></div>
+</main>
+<nav class="progress px" id="progress" hidden aria-label="진행 단계"></nav>
+<div class="toast" id="toast"></div>
+<script src="game.js"></script>
+</body>
+</html>
